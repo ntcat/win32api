@@ -1,0 +1,18 @@
+About win32api
+=========
+
+win32api is a Windows API wrapper package for Go.
+
+Originally part of [win](https://github.com/lxn/win), now I add more functions in it.
+
+there are the add list:
+
+FindWindowEx
+GetKeyboardLayout
+GetKeyboardLayoutList
+GetKeyboardLayoutName
+
+Setup
+=====
+ 
+Now run `go get github.com/ntcat/win32api`
