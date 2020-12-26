@@ -4,7 +4,7 @@
 
 // +build windows
 
-package win
+package api
 
 // Constants for MENUITEMINFO.fMask
 const (

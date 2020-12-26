@@ -4,7 +4,7 @@
 
 // +build windows
 
-package win
+package api
 
 type VARIANT struct {
 	Vt       VARTYPE

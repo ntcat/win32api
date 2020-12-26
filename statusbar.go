@@ -4,7 +4,7 @@
 
 // +build windows
 
-package win
+package api
 
 // Styles
 const (

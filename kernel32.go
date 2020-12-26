@@ -4,7 +4,7 @@
 
 // +build windows
 
-package win
+package api
 
 import (
 	"syscall"
@@ -294,7 +294,7 @@ func GetLogicalDriveStrings(nBufferLength DWORD, lpBuffer LPTSTR) DWORD {
 		uintptr(unsafe.Pointer(lpBuffer)),
 		0)
 
-	return uint32(ret)
+	return (DWORD)(ret)
 }
 
 func GetModuleHandle(lpModuleName *uint16) HINSTANCE {
@@ -424,7 +424,7 @@ func MoveMemory(destination, source unsafe.Pointer, length uintptr) {
 // ReadProcessMemory Read Process Memory
 func ReadProcessMemory(hProcess HANDLE, constlpBaseAddress LPCVOID,
 	lpBuffer LPVOID, nSize DWORD, lpNumberOfBytesRead LPDWORD) {
-	ret, _, _ := syscall.Syscall6(readProcessMemory.Addr(), 5,
+	syscall.Syscall6(readProcessMemory.Addr(), 5,
 		uintptr(unsafe.Pointer(hProcess)),
 		uintptr(unsafe.Pointer(constlpBaseAddress)),
 		uintptr(unsafe.Pointer(lpBuffer)),
