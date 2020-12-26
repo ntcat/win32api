@@ -4,12 +4,13 @@
 
 // +build windows
 
-package api
+package win32api
 
 import (
-	"golang.org/x/sys/windows"
 	"syscall"
 	"unsafe"
+
+	"golang.org/x/sys/windows"
 )
 
 // PDH error codes, which can be returned by all Pdh* functions. Taken from mingw-w64 pdhmsg.h

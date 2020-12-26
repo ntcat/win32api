@@ -4,7 +4,7 @@
 
 // +build windows
 
-package api
+package win32api
 
 const DTM_FIRST = 0x1000
 const DTN_FIRST = ^uint32(739)  // -740

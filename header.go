@@ -4,7 +4,7 @@
 
 // +build windows
 
-package api
+package win32api
 
 const (
 	HDS_NOSIZING = 0x0800

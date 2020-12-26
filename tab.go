@@ -4,7 +4,7 @@
 
 // +build windows
 
-package api
+package win32api
 
 const TCM_FIRST = 0x1300
 const TCN_FIRST = -550

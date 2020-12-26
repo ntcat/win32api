@@ -4,12 +4,13 @@
 
 // +build windows
 
-package api
+package win32api
 
 import (
-	"golang.org/x/sys/windows"
 	"syscall"
 	"unsafe"
+
+	"golang.org/x/sys/windows"
 )
 
 // for second parameter of WglSwapLayerBuffers

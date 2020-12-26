@@ -4,7 +4,7 @@
 
 // +build windows
 
-package api
+package win32api
 
 const UDN_FIRST = ^uint32(720)
 

@@ -4,7 +4,7 @@
 
 // +build windows
 
-package api
+package win32api
 
 const (
 	INVALID_LINK_INDEX = -1

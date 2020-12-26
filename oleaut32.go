@@ -4,13 +4,14 @@
 
 // +build windows
 
-package api
+package win32api
 
 import (
 	"fmt"
-	"golang.org/x/sys/windows"
 	"syscall"
 	"unsafe"
+
+	"golang.org/x/sys/windows"
 )
 
 type DISPID int32

@@ -4,7 +4,7 @@
 
 // +build windows
 
-package api
+package win32api
 
 // Edit styles
 const (
